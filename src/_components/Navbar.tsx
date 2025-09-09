@@ -17,7 +17,6 @@ const NAV_ITEMS = [
   { label: "Shop", href: "#shop" },
   { label: "New-Collection", href: "#new-collection" },
   { label: "Collection", href: "#collection" },
-  { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ];
 

@@ -1,9 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 
-const BannerImage =
-  "https://amsterdamheritage.com/cdn/shop/files/Bags-Classic_Collection_40b969c1-c813-44a1-be65-daac10e9d1c6.png?v=1734610091&width=750";
-
 export default function Banner() {
   return (
     <section className="relative bg-gray-50 dark:bg-gray-900 h-[120px] sm:h-[160px] overflow-hidden">
@@ -23,18 +20,17 @@ export default function Banner() {
           </p>
         </motion.div>
 
-        {/* O'ngdagi Rasm */}
+        {/* O'ngdagi Kontent */}
         <motion.div
-          className="absolute right-0 bottom-0 h-full"
+          className="z-0 h-full flex items-center"
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <img
-            src={BannerImage}
-            alt="Banner Person"
-            className="h-[220px] sm:h-[260px] object-cover translate-y-[30%] translate-x-[20%] hidden sm:block"
-          />
+          <h1 className="text-2xl sm:text-xl font-semibold text-gray-800 dark:text-gray-200 flex items-center">
+            Wel
+            <span className="text-pink-500 ml-1">come</span>
+          </h1>
         </motion.div>
       </div>
     </section>
